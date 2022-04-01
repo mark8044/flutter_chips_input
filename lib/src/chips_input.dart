@@ -291,7 +291,7 @@ class ChipsInputState<T> extends State<ChipsInput<T>>
   }
 
   void _scrollToVisible() {
-    Future.delayed(const Duration(milliseconds: 300), () {
+    Future.delayed(const Duration(milliseconds: 10), () {
       WidgetsBinding.instance?.addPostFrameCallback((_) async {
         final renderBox = context.findRenderObject() as RenderBox;
         await Scrollable.of(context)?.position.ensureVisible(renderBox);
