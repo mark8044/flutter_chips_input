@@ -414,11 +414,6 @@ class ChipsInputState<T> extends State<ChipsInput<T>>
   @override
   AutofillScope? get currentAutofillScope => null;
 
-  @override
-  void insertTextPlaceholder(Size size) {}
-
-  @override
-  void removeTextPlaceholder() {}
 
   @override
   void updateEditingValueWithDeltas(List<TextEditingDelta> textEditingDeltas) {}
