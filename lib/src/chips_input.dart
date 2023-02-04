@@ -415,6 +415,22 @@ class ChipsInputState<T> extends State<ChipsInput<T>>
   AutofillScope? get currentAutofillScope => null;
 
   @override
+  void insertTextPlaceholder(Size size) {}
+
+  @override
+  void removeTextPlaceholder() {}
+
+  @override
+  void updateEditingValueWithDeltas(List<TextEditingDelta> textEditingDeltas) {}
+
+  @override
+  void didChangeInputControl(
+      TextInputControl? oldControl, TextInputControl? newControl) {}
+
+  @override
+  void performSelector(String selectorName) {}
+    
+  @override
   Widget build(BuildContext context) {
     _nodeAttachment.reparent();
     final chipsChildren = _chips
